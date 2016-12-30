@@ -5,17 +5,20 @@
    font-family: sans-serif;
 }
 @media screen and (max-width:480px) {
-   #jb-container {
+   .container {
     width: auto;
    }
-   #jb-content {
-    float: none;
-    width: auto;
+   #cbp-fbscroller nav{
+      display: none;
    }
-   #jb-sidebar {
-    float: none;
-    width: auto;
+   .arrow{
+      position: fixed;
    }
+   .mainfonts{
+      float: none;
+      width: auto;
+   }
+   .
 }   
 body, html {
    height: 100%;
@@ -76,6 +79,9 @@ body, html {
    -moz-transform: rotate(135deg);
    -webkit-transform: rotate(135deg);
    transform: rotate(135deg);
+}
+.mainfont{
+
 }
 .mainfont1{
    left: 10%;
