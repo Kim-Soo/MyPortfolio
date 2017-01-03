@@ -138,14 +138,28 @@ html, body,
       -webkit-transition-duration: .3s;
    }
 .mainfonts1 img.enlargement { width: 50%; }   
-
+.mainfonts2{
+   position: absolute;
+   width: 50%;
+   height: 40%;
+   left: 50%;
+   margin-right: 0;
+   bottom: 0;
+}
+.mainfonts3{
+   position: absolute;
+   width: 50%;
+   height: 20%;
+   left: 50%;
+   bottom: 2%;
+   z-index: 999;
+}
 #mark1{
    font-family: goBoldLight;
    font-size: 20px;
    color: #4C4C4C;
    position: absolute;
-   top: 68%;
-   left: 53.5%;
+   top: 30%;
    letter-spacing: 2pt;
 }
 #mark2{
@@ -153,8 +167,7 @@ html, body,
    font-size: 14px;
    color: #707070;
    position: absolute;
-   top: 75%;
-   left: 53.5%;
+   top: 50%;
    letter-spacing: 1pt;
 }
 #mainhided{
@@ -172,7 +185,7 @@ html, body,
 .myImage img{
    margin-top: 25%;
    margin-left: 12%;
-   height: 50%;
+   width: 90%;
 }
 .intro{
    top: 20%;
@@ -221,8 +234,6 @@ html, body,
       font-size: 25px;
       color: #4C4C4C;
       position: absolute;
-      top: 68%;
-      left: 53.5%;
       letter-spacing: 2pt;
    }
    .myImage img{
@@ -253,8 +264,6 @@ html, body,
       font-size: 25px;
       color: #4C4C4C;
       position: absolute;
-      top: 68%;
-      left: 53.5%;
       letter-spacing: 2pt;
    }
    .myImage img{
