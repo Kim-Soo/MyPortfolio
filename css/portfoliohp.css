@@ -259,6 +259,7 @@ html, body,
    }
    .myImage img{
       height: 42%;
+      margin-left: 19%;
    }
 }    
 
