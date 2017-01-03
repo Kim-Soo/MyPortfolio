@@ -19,6 +19,11 @@
 			<a href="#fbsection4">Section 4</a>
 			<a href="#fbsection5">Section 5</a>
 		</nav>
+		<div class="arrow">
+	    	<a href="#">
+			    <span class="arrowbottom"></span>
+		    </a>
+		</div>
 		<section id="fbsection1">
 			<div class="backGround1">
 				<div class="mainfonts1">
@@ -32,19 +37,14 @@
 				<div class="mainfonts3">
 					<p id="mainhided">PORTFOLIO HOMEPAGE</p>
 				</div>
-				<div class="arrow">
-			    	<a href="#">
-					    <span class="arrowbottom"></span>
-				    </a>
-				</div>
 			</div>
 		</section>
 		<section id="fbsection2">
 			<div class="backGround2">
-				<div class="myImage col-lg-6 col-md-12">
+				<div class="myImage col-lg-6 col-xs-12">
 					<img src="image/myimage.jpeg">
 				</div>
-				<div class="intro col-lg-6 col-md-12">
+				<div class="intro col-lg-6 col-xs-12">
 					<h3>Intro</h3>
 					<ul>
 						<li>Name : 김수</li>
@@ -69,10 +69,24 @@
 <script src="js/waypoints.min.js"></script>
 		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
 <script src="js/jquery.debouncedresize.js"></script>
-<script src="js/cbpFixedScrollLayout.min.js"></script>
+<script src="js/cbpFixedScrollLayout.min.js"></script>	
 <script>
 	$(function() {
 		cbpFixedScrollLayout.init();
+	});
+
+	var go_count = 0;
+	$(".arrow").on('click hover', function() {
+		if(go_count == 0){
+			$('html, body').animate({
+	        	scrollTop: $("#fbsection2").offset().top
+	   		}, 1500);
+		} else if(go_count == 1){
+			$('html, body').animate({
+	        	scrollTop: $("#fbsection3").offset().top
+	   		}, 1500);
+		} 
+		go_count++;
 	});
 </script>
 </body>
