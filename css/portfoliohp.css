@@ -349,5 +349,12 @@ html, body,
       margin-right: 10% ; 
       display: block;
    }
+   .intro h3{
+      font-size: 15px;
+   }
+   .intro li{
+      font-family: bmdohyeon;
+      font-size: 10px;
+   }
 }    
 
