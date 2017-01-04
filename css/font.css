@@ -6,3 +6,7 @@
     font-family: goBoldLight;
     src: url('../font/GoboldLight.ttf');
 }
+@font-face {
+	font-family: bmdohyeon;
+	src: url('../font/BMDOHYEON_ttf.ttf');
+}

@@ -194,10 +194,49 @@ html, body,
    width: 80%;
 }
 .intro{
-   top: 30%;
+   top: 20%;
    bottom: 0;
+   font-family: bmdohyeon;
+   font-size: 15px;
 }
-
+.intro h3{
+   font-family: bmdohyeon;
+}
+.intro li{
+   font-family: bmdohyeon;
+   font-size: 15px;
+}
+@media screen and (min-width:1024px) and (max-width: 1200px){
+   .mainfonts1 img{
+      margin-top: 10%;
+      width: 60%;
+      margin-left: 7%;
+   }
+   .mainfonts1 img:after{
+      margin-top: -10px;
+   }
+   #mark1{
+      font-size: 15px;
+   }
+   #mark2{
+      top: 50%;
+      font-size: 10px;
+   }
+   .myImage img{
+      margin-left: auto; 
+      margin-right: auto; 
+      display: block;
+      width: 65%;
+   }
+   .intro{
+      top: 0;
+   }
+   .intro div{
+      margin-left: 20%; 
+      margin-right: 20%; 
+      display: block;
+   }
+}
 @media screen and (min-width:768px) and (max-width:1024px){
    .mainfonts1 img{
       margin-top: 10%;
@@ -217,9 +256,15 @@ html, body,
       margin-left: auto; 
       margin-right: auto; 
       display: block;
+      width: 60%;
    }
    .intro{
       top: 0;
+   }
+   .intro div{
+      margin-left: 20%; 
+      margin-right: 20%; 
+      display: block;
    }
 }
 @media screen and (min-width:480px) and (max-width:768px){
@@ -255,8 +300,10 @@ html, body,
       margin-top: 10%;
       display: block;
    }
-   .intro div{
+   .intro{
       top: 0;
+   }
+   .intro div{
       margin-left: 10%; 
       margin-right: 10%; 
       display: block;
@@ -299,7 +346,7 @@ html, body,
    }
    .intro div{
       margin-left: 10%; 
-      margin-right: 10%; 
+      margin-right: 10% ; 
       display: block;
    }
 }    
