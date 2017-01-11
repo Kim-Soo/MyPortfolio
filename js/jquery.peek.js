@@ -24,7 +24,7 @@
   };
 
   defaults = {
-    'showDirection':  'up',
+    'showDirection':  'up''down',
     'toggleClass':    'hidden',
     'triggerDelta':   50,
     'triggerElement': window

@@ -14,8 +14,12 @@ html, body,
 }
 .navbar{
    visibility: hidden;
-   position: absolute;
+   position: fixed;
    z-index: 99999;
+   top: 0;
+   left: 0;
+   right: 0;
+   margin: 0;
 }
 .cbp-fbscroller > nav {
    position: fixed;
@@ -86,50 +90,6 @@ html, body,
    left: 0;
    width: 100%;
    height: 100%;
-}
-.arrow{
-   position: absolute;
-   z-index: 9999;
-   cursor: pointer;
-   bottom: 1%;
-   left: 47.5%;
-   display: inline-block;
-   vertical-align: middle;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-}
-.arw{
-   display: inline-block;
-   border-radius: 50%;
-}
-.arrow a:hover .arrowbottom{
-   border: 0.5em solid #e74c3c;
-}
-
-.arrow a:hover .arrowbottom:after{
-   border-top: 0.5em solid #e74c3c;
-   border-right: 0.5em solid #e74c3c;
-}
-.arrowbottom{
-   display: inline-block;
-   width: 3em;
-   height: 3em;
-   border: 0.5em solid #333;
-   border-radius: 50%;
-   margin-left: 0;
-}
-.arrowbottom:after{
-   content: '';
-   display: inline-block;
-   margin-top: 0.3em;
-   width: 1.2em;
-   height: 1.2em;
-   border-top: 0.5em solid #333;
-   border-right: 0.5em solid #333;
-   -moz-transform: rotate(135deg);
-   -webkit-transform: rotate(135deg);
-   transform: rotate(135deg);
 }
 .mainfonts1{
    height: 100%;
@@ -278,10 +238,6 @@ html, body,
    .navbar{
       visibility: visible;
    }
-   .arrow{
-      position: fixed;
-      left: 47%;
-   }
    .mainfonts1 img{
       margin-top: 10%;
       margin-left: 10%;
@@ -322,10 +278,6 @@ html, body,
    }
    .navbar{
       visibility: visible;
-   }
-   .arrow{
-      position: fixed;
-      left: 45%;
    }
    .mainfonts1 img{
       margin-top: 30%;
