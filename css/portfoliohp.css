@@ -304,8 +304,8 @@ html, body,
       top: 0;
    }
    .intro div{
-      margin-left: 10%; 
-      margin-right: 10%; 
+      margin-left: 15%; 
+      margin-right: 15%; 
       display: block;
    }
 }  
@@ -351,6 +351,9 @@ html, body,
    }
    .intro h3{
       font-size: 15px;
+   }
+   .intro h4{
+      font-size: 12px;
    }
    .intro li{
       font-family: bmdohyeon;
