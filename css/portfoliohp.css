@@ -12,6 +12,11 @@ html, body,
    width: 100%; 
    background-color: #FAFAFA;
 }
+.navbar{
+   visibility: hidden;
+   position: absolute;
+   z-index: 99999;
+}
 .cbp-fbscroller > nav {
    position: fixed;
    z-index: 9999;
@@ -52,8 +57,7 @@ html, body,
    background-repeat: no-repeat;
    background-size: cover;
 }
-
-.no-touch .cbp-fbscroller section {
+.cbp-fbscroller section {
    background-attachment: fixed;
 }
 
@@ -271,6 +275,9 @@ html, body,
    #cbp-fbscroller nav{
       visibility: hidden;
    }
+   .navbar{
+      visibility: visible;
+   }
    .arrow{
       position: fixed;
       left: 47%;
@@ -312,6 +319,9 @@ html, body,
 @media screen and (min-width:1px) and (max-width:480px) {
    #cbp-fbscroller nav{
       visibility: hidden;
+   }
+   .navbar{
+      visibility: visible;
    }
    .arrow{
       position: fixed;
