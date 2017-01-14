@@ -7,6 +7,10 @@
     src: url('../font/GoboldLight.ttf');
 }
 @font-face {
-	font-family: bmdohyeon;
-	src: url('../font/BMDOHYEON_ttf.ttf');
+	font-family: nngothic;
+	src: url('../font/NanumGothic.ttf');
+}
+@font-face {
+	font-family: nngothiceb;
+	src: url('../font/NanumGothicExtraBold.ttf');
 }

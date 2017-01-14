@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/font.css"/>
 	<link rel="stylesheet" href="css/portfoliohp.css"/>
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 	<title>index.html</title>
@@ -52,44 +53,88 @@
 		</section>
 		<section id="fbsection2">
 			<div class="backGround2">
-				<div class="row">
-					<div class="myImage col-xs-12 col-md-6 col-lg-6">
-						<div>
-							<img src="image/myimage.jpeg">
-						</div>
-					</div>
-					<div class="intro col-xs-12 col-md-6 col-lg-6">
-						<div id="introinfo">
-							<h2>인트로</h2>
-						</div>
-						<div id="about">
-							<h3>소개</h3>
-							<ul>
-								<li>이름 : 김수</li>
-								<li>생년월일 : 1993. 07. 21</li>
-								<li>거주지 : 서울특별시 강남구 자곡로</li>
-								<li>전공학과 : 정보경영학과</li>
-								<li>신조 : 모험하라, 꿈꾸라, 발견하라</li>
-							</ul>
-						</div>
-						<div id="school">
-							<h3>학력</h3>
-							<ul>
-								<li>2009.03 : 팔렬고등학교 입학</li>
-								<li>2012.02 : 팔렬고등학교 졸업</li>
-								<li>2012.03 : 동국대학교(경주캠퍼스) 경상학부 입학</li>
-								<li>2017.02 : 동국대학교(경주캠퍼스) 졸업예정</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				<div class="ui vertically divided grid">
+		      <div class="two column stackable row">
+		        <div class="myImage column">
+		          <img src="image/myImage.jpeg"/>
+		        </div>
+		        <div class="intro column">
+		          <div id="introinfo">
+		            <h2>인트로</h2>
+		          </div>
+		          <div id="about">
+		            <h3>소개</h3>
+		            <ul>
+		              <li>이름 : 김수</li>
+		              <li>생년월일 : 1993. 07. 21</li>
+		              <li>거주지 : 서울특별시 강남구 자곡로</li>
+		              <li>전공학과 : 정보경영학과</li>
+		              <li>신조 : 모험하라, 꿈꾸라, 발견하라</li>
+		            </ul>
+		          </div>
+		          <div id="school">
+		            <h3>학력</h3>
+		            <ul>
+		              <li>2009.03 : 팔렬고등학교 입학</li>
+		              <li>2012.02 : 팔렬고등학교 졸업</li>
+		              <li>2012.03 : 동국대학교(경주캠퍼스) 경상학부 입학</li>
+		              <li>2017.02 : 동국대학교(경주캠퍼스) 졸업예정</li>
+		            </ul>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
 			</div>
 		</section>
 		<section id="fbsection3">
 			<div class="backGround3">
 				<div class="row">
 					<div class="interest">
-						<div style="font-family: bmdohyeon;"><h1>관심분야</h1></div>
+						<div style="font-family:  nngothiceb;"><h1>관심분야</h1></div>
+						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="ai">
+							<div class="col-xs-4 col-sm-4 col-md-5 col-lg-4"><img src="image/ai.png" class="aiimg" style="width: 90%;"></div>
+							<div class="col-xs-6 col-sm-6 col-md-5 col-lg-6">
+								<h3>인공지능, 머신러닝</h3>
+								<p>머신러닝 라이브러리 텐서플로우로 독학중</p>
+							</div>
+						</div>
+						<div class="col-xs-12col-sm-11 col-md-5 col-lg-6" id="iot">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="image/iot.png" class="iotimg" style="width: 90%;"></div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h3>사물인터넷</h3>
+								<p>기술 기획, 구현 목표로 프로그래밍 공부</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="web">
+							<div class="col-lg-4 col-sm-4 col-md-4 col-xs-4"><img src="image/web.png" class="webimg" style="width: 90%;"></div>
+							<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+								<h3>웹 디자인</h3>
+								<p>반응형 웹 디자인 연구</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="app">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="image/app.png" class="appimg" style="width: 90%;"></div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h3>앱</h3>
+								<p>자바스크립트 이루어진 라이브러리 "React Native" 독학</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="hci">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="image/hci.png" class="hciimg" style="width: 90%;"></div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h3>HCI</h3>
+								<p>HCI UX 관련 서적을 통해 기본개념 공부</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="fbsection4">
+			<div class="backGround4">
+				<div class="row">
+					<div class="interest">
+						<div style="font-family:  nngothiceb;"><h1>관심분야</h1></div>
 						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="ai">
 							<div class="col-xs-4 col-sm-4 col-md-5 col-lg-4"><img src="image/ai.png" class="aiimg" style="width: 90%;"></div>
 							<div class="col-xs-6 col-sm-6 col-md-5 col-lg-6">
@@ -137,6 +182,7 @@
 <script src="js/jquery.debouncedresize.js"></script>
 <script src="js/cbpFixedScrollLayout.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="semantic/dist/semantic.min.js"></script>
 <script>
 	$(function() {
 		cbpFixedScrollLayout.init();
