@@ -4,12 +4,12 @@
    box-sizing: border-box;
    font-family: sans-serif;
 }
-html, body, 
+html, body,
 .container,
 .cbp-fbscroller,
-.cbp-fbscroller section { 
+.cbp-fbscroller section {
    height: 100%;
-   width: 100%; 
+   width: 100%;
    background-color: #FAFAFA;
 }
 .navbar{
@@ -61,23 +61,23 @@ html, body,
 }
 
 #fbsection1 {
-  
+
 }
 
 #fbsection2 {
-   
+
 }
 
 #fbsection3 {
-   
+
 }
 
 #fbsection4 {
-   
+
 }
 
 #fbsection5 {
-   
+
 }
 .backGround1{
    position: absolute;
@@ -96,7 +96,7 @@ html, body,
       -webkit-transition-property: width;
       -webkit-transition-duration: .3s;
    }
-.mainfonts1 img.enlargement { width: 50%; }   
+.mainfonts1 img.enlargement { width: 50%; }
 .mainfonts2{
    position: absolute;
    width: 50%;
@@ -146,8 +146,8 @@ html, body,
 
 }
 .myImage img{
-   margin-left: auto; 
-   margin-right: auto; 
+   margin-left: auto;
+   margin-right: auto;
    margin-top: 10%;
    display: block;
    width: 80%;
@@ -190,8 +190,8 @@ html, body,
       font-size: 10px;
    }
    .myImage img{
-      margin-left: auto; 
-      margin-right: auto; 
+      margin-left: auto;
+      margin-right: auto;
       display: block;
       width: 80%;
    }
@@ -199,8 +199,8 @@ html, body,
       top: 10%;
    }
    .intro div{
-      margin-left: 15%; 
-      margin-right: 20%; 
+      margin-left: 15%;
+      margin-right: 20%;
       display: block;
    }
 }
@@ -220,8 +220,8 @@ html, body,
       font-size: 7px;
    }
    .myImage img{
-      margin-left: auto; 
-      margin-right: auto; 
+      margin-left: auto;
+      margin-right: auto;
       display: block;
       width: 60%;
    }
@@ -229,8 +229,8 @@ html, body,
       top: 0;
    }
    .intro div{
-      margin-left: 20%; 
-      margin-right: 20%; 
+      margin-left: 20%;
+      margin-right: 20%;
       display: block;
    }
 }
@@ -261,8 +261,8 @@ html, body,
       letter-spacing: 2pt;
    }
    .myImage img{
-      margin-left: auto; 
-      margin-right: auto; 
+      margin-left: auto;
+      margin-right: auto;
       margin-top: 10%;
       display: block;
    }
@@ -270,11 +270,11 @@ html, body,
       top: 0;
    }
    .intro div{
-      margin-left: 15%; 
-      margin-right: 15%; 
+      margin-left: 15%;
+      margin-right: 15%;
       display: block;
    }
-}  
+}
 @media screen and (min-width:1px) and (max-width:480px) {
    #cbp-fbscroller nav{
       visibility: hidden;
@@ -301,17 +301,17 @@ html, body,
       letter-spacing: 2pt;
    }
    .myImage img{
-      margin-left: auto; 
+      margin-left: auto;
       margin-right: auto;
-      margin-top: 10%; 
+      margin-top: 10%;
       display: block;
    }
    .intro{
       top: 0;
    }
    .intro div{
-      margin-left: 10%; 
-      margin-right: 10% ; 
+      margin-left: 10%;
+      margin-right: 10% ;
       display: block;
    }
    .intro h2{
@@ -324,5 +324,10 @@ html, body,
       font-family: bmdohyeon;
       font-size: 10px;
    }
-}    
-
+   #ai img{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 10%;
+     display: block;
+   }
+}
