@@ -303,7 +303,7 @@ html, body,
    .myImage img{
       margin-left: auto;
       margin-right: auto;
-      margin-top: 10%;
+      margin-top: 30%;
       display: block;
    }
    .intro{
@@ -323,11 +323,5 @@ html, body,
    .intro li{
       font-family: bmdohyeon;
       font-size: 10px;
-   }
-   #ai img{
-     margin-left: auto;
-     margin-right: auto;
-     margin-top: 10%;
-     display: block;
    }
 }
