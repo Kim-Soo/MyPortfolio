@@ -1,200 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="css/bootstrap.css"/>
-	<link rel="stylesheet" href="css/font.css"/>
-	<link rel="stylesheet" href="css/portfoliohp.css"/>
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
-	<title>index.html</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <title>Document</title>
 </head>
+<style>
+  * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     font-family: sans-serif;
+  }
+  html, body,
+  .container{
+     height: 100vh;
+     width: 100vw;
+     background-color: #EAEAEA;
+  }
+  .box{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  .left-side{
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    overflow: hidden;
+    border: solid red;
+  }
+  .left-inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 20px 75px 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #mySidenav{
+    top: 40%;
+    width:280px;
+    height:200px;
+    display:inline-block;
+    background-color: #EAEAEA;
+  }
+  .right-side{
+    z-index: 55;
+    position: absolute;
+    min-height: 100vh;
+    right: 0;
+    top: 0;
+    left: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: solid blue;
+    background: transparents;
+  }
+  .mainpage{
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 360px);
+    min-height: 100vh;
+    padding-right: 40px;
+  }
+  .toppage{
+    background: transparent;
+  }
+  .tpinner{
+    text-align: center;
+    border: dotted;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  .tpbody{
+    text-align: center;
+    height: 40vh;
+    border: dotted;
+  }
+  .bodypage{
+    margin-top: 100px;
+    height: auto;
+  }
+  .bodyinner{
+    padding: 0 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 300vh;
+    background: #FFF;
+    text-align: center;
+    border: dotted green;
+  }
+  .article{
+    display: block;
+    box-sizing: inherit;
+    text-align: center;
+    border: dotted yellow;
+    height: 300vh;
+  }
+  @media screen and (max-width: 960px){
+    .left-side{
+      display: none;
+    }
+    .right-side{
+      left: 0;
+    }
+    .mainpage{
+      width: 100vw;
+      padding-right: 0;
+    }
+  }
+</style>
 <body>
 <div class="container">
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container1">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="#">Soo's Portfolio</a> </div>
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">메인</a></li>
-					<li><a href="#fbsection2">인트로</a></li>
-					<li><a href="#fbsection3">관심분야</a></li>
-				</ul>
-			</div>
-	<!-- /.nav-collapse -->
-		</div>
-	<!-- /.container -->
-	</nav>
-	<div id="cbp-fbscroller" class="cbp-fbscroller">
-		<nav class="navi">
-			<a href="#fbsection1" class="cbp-fbcurrent">Section 1</a>
-			<a href="#fbsection2">Section 2</a>
-			<a href="#fbsection3">Section 3</a>
-			<a href="#fbsection4">Section 4</a>
-			<a href="#fbsection5">Section 5</a>
-		</nav>
-		<section id="fbsection1">
-			<div class="backGround1">
-				<div class="mainfonts1">
-					<img src="image/font.png">
-				</div>
-				<div class="mainfonts2">
-					<p id="mark1">TWENTY YEARS FROM NOW, YOU WILL BE MORE DISAPPOINTED</br>
-				  		BY THE THINGS YOU DIDN'T DO THAN BY THE ONES YOU DID.</p></br>
-					<p id="mark2">SO THROW OFF THE BOWLINES. SAIL AWAY FROM THE SAFE HARBOR.</br>
-				  		CATCH THE TRADE WINDS IN YOUR SAILS.</p>
-				</div>
-				<div class="mainfonts3">
-					<p id="mainhided">PORTFOLIO HOMEPAGE</p>
-				</div>
-			</div>
-		</section>
-		<section id="fbsection2">
-			<div class="backGround2">
-				<div class="ui vertically divided grid">
-		      <div class="two column stackable row">
-		        <div class="myImage column">
-		          <img src="image/myImage.jpeg"/>
-		        </div>
-		        <div class="intro column">
-		          <div id="introinfo">
-		            <h2>인트로</h2>
-		          </div>
-		          <div id="about">
-		            <h3>소개</h3>
-		            <ul>
-		              <li>이름 : 김수</li>
-		              <li>생년월일 : 1993. 07. 21</li>
-		              <li>거주지 : 서울특별시 강남구 자곡로</li>
-		              <li>전공학과 : 정보경영학과</li>
-		              <li>신조 : 모험하라, 꿈꾸라, 발견하라</li>
-		            </ul>
-		          </div>
-		          <div id="school">
-		            <h3>학력</h3>
-		            <ul>
-		              <li>2009.03 : 팔렬고등학교 입학</li>
-		              <li>2012.02 : 팔렬고등학교 졸업</li>
-		              <li>2012.03 : 동국대학교(경주캠퍼스) 경상학부 입학</li>
-		              <li>2017.02 : 동국대학교(경주캠퍼스) 졸업예정</li>
-		            </ul>
-		          </div>
-		        </div>
-		      </div>
-		    </div>
-			</div>
-		</section>
-		<section id="fbsection3">
-			<div class="backGround3">
-				<div class="row">
-					<div class="interest">
-						<div style="font-family:  nngothiceb;"><h1>관심분야</h1></div>
-						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="ai">
-							<div class="col-xs-4 col-sm-4 col-md-5 col-lg-4"><img src="image/ai.png" class="aiimg" style="width: 90%;"></div>
-							<div class="col-xs-6 col-sm-6 col-md-5 col-lg-6">
-								<h3>인공지능, 머신러닝</h3>
-								<p>머신러닝 라이브러리 텐서플로우로 독학중</p>
-							</div>
-						</div>
-						<div class="col-xs-12col-sm-11 col-md-5 col-lg-6" id="iot">
-							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="image/iot.png" class="iotimg" style="width: 90%;"></div>
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-								<h3>사물인터넷</h3>
-								<p>기술 기획, 구현 목표로 프로그래밍 공부</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="web">
-							<div class="col-lg-4 col-sm-4 col-md-4 col-xs-4"><img src="image/web.png" class="webimg" style="width: 90%;"></div>
-							<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-								<h3>웹 디자인</h3>
-								<p>반응형 웹 디자인 연구</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="app">
-							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="image/app.png" class="appimg" style="width: 90%;"></div>
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-								<h3>앱</h3>
-								<p>자바스크립트 이루어진 라이브러리 "React Native" 독학</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="hci">
-							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="image/hci.png" class="hciimg" style="width: 90%;"></div>
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-								<h3>HCI</h3>
-								<p>HCI UX 관련 서적을 통해 기본개념 공부</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="fbsection4">
-			<div class="backGround4">
-				<div class="row">
-					<div class="interest">
-						<div style="font-family:  nngothiceb;"><h1>관심분야</h1></div>
-						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="ai">
-							<div class="col-xs-4 col-sm-4 col-md-5 col-lg-4"><img src="image/ai.png" class="aiimg" style="width: 90%;"></div>
-							<div class="col-xs-6 col-sm-6 col-md-5 col-lg-6">
-								<h3>인공지능, 머신러닝</h3>
-								<p>머신러닝 라이브러리 텐서플로우로 독학중</p>
-							</div>
-						</div>
-						<div class="col-xs-12col-sm-11 col-md-5 col-lg-6" id="iot">
-							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="image/iot.png" class="iotimg" style="width: 90%;"></div>
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-								<h3>사물인터넷</h3>
-								<p>기술 기획, 구현 목표로 프로그래밍 공부</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="web">
-							<div class="col-lg-4 col-sm-4 col-md-4 col-xs-4"><img src="image/web.png" class="webimg" style="width: 90%;"></div>
-							<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-								<h3>웹 디자인</h3>
-								<p>반응형 웹 디자인 연구</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="app">
-							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="image/app.png" class="appimg" style="width: 90%;"></div>
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-								<h3>앱</h3>
-								<p>자바스크립트 이루어진 라이브러리 "React Native" 독학</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-11 col-md-5 col-lg-6" id="hci">
-							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="image/hci.png" class="hciimg" style="width: 90%;"></div>
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-								<h3>HCI</h3>
-								<p>HCI UX 관련 서적을 통해 기본개념 공부</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+  <div class="box">
+  <canvas id="canvas" style="width: 100%; height: 100%; touch-action: none; cursor: inherit;"></canvas>
+  </div>
+  <div class="left-side">
+    <div class="left-inner">
+      <nav class="w3-sidenav w3-collapse" id="mySidenav">
+        <a class="active" href="#">Home</a>
+        <a href="#intro">Intro</a>
+        <a href="#interest">Interest</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+      </nav>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="mainpage">
+      <div class="toppage">
+        <div class="tpinner">
+          <div class="tpbody">
+            <img src="image/font.png" style="width: 400px;">
+          </div>
+        </div>
+      </div>
+      <div class="bodypage">
+        <div class="bodyinner">
+          <div class="article">
+            <div class="home" id="home" style="height: 100vh; position: relative;"></div>
+            <div class="intro" id="intro" style="height: 100vh; position: relative;"></div>
+            <div class="interest" id="interest" style="height: 100vh; position: relative;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.debouncedresize.js"></script>
-<script src="js/cbpFixedScrollLayout.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="js/jquery-3.1.1.js"></script>
 <script src="semantic/dist/semantic.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script>
-	$(function() {
-		cbpFixedScrollLayout.init();
-	});
-	$(document).ready(function(){
-  		$('.navbar li').click(function(){
-  			$(".navbar-collapse").collapse('hide');
-    		$('li').removeClass('active');
-    		$(this).addClass('active');
-		});
-	});
-
+  function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+  }
 </script>
 </body>
 </html>
