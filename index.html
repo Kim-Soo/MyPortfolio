@@ -60,6 +60,7 @@
     height:200px;
     display:inline-block;
     background-color: #EAEAEA;
+    opacity:0.8;
   }
   .right-side{
     z-index: 55;
@@ -136,13 +137,20 @@
       padding-right: 0;
     }
   }
+  @media screen and (max-width: 768px){
+    .mainimg {
+      width:
+    }
+  }
 </style>
 <body>
 <div class="container">
+
   <div class="box">
   <canvas id="canvas" style="width: 100%; height: 100%; touch-action: none; cursor: inherit;"></canvas>
   </div>
   <div class="left-side">
+    <img src="image/font.png" style="height: 100%;">
     <div class="left-inner">
       <nav class="w3-sidenav w3-collapse" id="mySidenav">
         <a class="active" href="#">Home</a>
@@ -158,16 +166,23 @@
       <div class="toppage">
         <div class="tpinner">
           <div class="tpbody">
-            <img src="image/font.png" style="width: 400px;">
           </div>
         </div>
       </div>
       <div class="bodypage">
         <div class="bodyinner">
           <div class="article">
-            <div class="home" id="home" style="height: 100vh; position: relative;"></div>
-            <div class="intro" id="intro" style="height: 100vh; position: relative;"></div>
-            <div class="interest" id="interest" style="height: 100vh; position: relative;"></div>
+            <div class="home col-lg-12 col-md-12 col-xs-12" id="home" style="height: 100vh; position: relative;">
+              <div class="myimg col-lg-4 col-md-12 col-xs-12" style="padding-top: 15px;">
+                <img src="image/myImage.jpeg" style="width: 100%;">
+              </div>
+              <div class="intro col-lg-7 col-md-12 col-xs-12" style="text-align: left; top:5%;">
+                <p>안녕하세요. 저는 HCI 연구를 통해 UX와 UI를 기반으로 한 IoT 기술의 스마트폰 앱 개발과 기술 개발을 공부하고있는 학생입니다.
+                현재 대학교 졸업을 앞두고 대학원 진학을 목표로 공부하고 있습니다.</p>
+              </div>
+            </div>
+            <!--<div class="intro" id="intro" style="height: 100vh; position: relative;"></div>
+            <div class="interest" id="interest" style="height: 100vh; position: relative;"></div>-->
           </div>
         </div>
       </div>
