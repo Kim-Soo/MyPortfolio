@@ -105,6 +105,11 @@
     height: 40vh;
     border: dotted;
   }
+  #fontimg{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .bodypage{
     margin-top: 100px;
     height: auto;
@@ -138,8 +143,23 @@
     }
   }
   @media screen and (max-width: 768px){
-    .mainimg {
-      width:
+    .tpbody{
+      height: 30vh;
+    }
+    #fontimg{
+      display: block;
+    }
+    .bodypage{
+      margin-top: 30px;
+    }
+    .bodyinner{
+      padding: 0 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+      height: 300vh;
+      background: #FFF;
+      text-align: center;
+      border: dotted green;
     }
   }
 </style>
@@ -166,6 +186,7 @@
       <div class="toppage">
         <div class="tpinner">
           <div class="tpbody">
+            <img src="image/font.png" id=fontimg height="100%;">
           </div>
         </div>
       </div>
