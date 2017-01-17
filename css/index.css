@@ -95,7 +95,7 @@ nav a.active{
 }
 .tpbody{
   text-align: center;
-  height: 40vh;
+  height: 35vh;
 }
 #fontimg{
   display: block;
@@ -116,13 +116,22 @@ nav a.active{
   height: 500vh;
   background-color: #FAFAFA;
   text-align: center;
-  border-radius: 0.5%;
+  border-radius: 25px;
 }
 .article{
   box-sizing: inherit;
   text-align: center;
   height: 500vh;
   position: relative;
+}
+.indexPage{
+  width: 100%;
+  height: 30%;
+  position: relative;
+  top: 5%;
+  text-align: left;
+  font-family: NSB;
+  font-size: 20px;
 }
 .myIntro{
   top: 2%;
@@ -149,7 +158,7 @@ nav a.active{
     padding-right: 0;
   }
   .tpbody{
-    height: 35vh;
+    height: 30vh;
   }
   #fontimg{
     display: block;
@@ -165,7 +174,7 @@ nav a.active{
 }
 @media screen and (max-width: 768px){
   .tpbody{
-    height: 30vh;
+    height: 25vh;
   }
   #fontimg{
     display: block;
