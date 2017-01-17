@@ -20,11 +20,11 @@
   <div class="left-side" id="particles">
     <div class="left-inner">
       <nav class="w3-sidenav w3-collapse" id="mySidenav">
-        <a class="navhome active" href="#">Home</a>
+        <a class="navhome active" href="#canvas">Home</a>
         <a class="navintro" href="#intro">Intro</a>
         <a class="navinter" href="#interest">Interest</a>
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
+        <a class="navlink4" href="#link4">Link 4</a>
+        <a class="navlink5" href="#link5">Link 5</a>
       </nav>
     </div>
     <div class="logo" style="position: absolute; left: 100px; top: 90%; width: 20%; font-family: NSEB;">
@@ -63,7 +63,9 @@
               </div>
             </section>
             <section class="intro" id="intro" style="height: 100vh;"></section>
-            <!--<div class="interest" id="interest" style="height: 100vh; position: relative;"></div>-->
+            <section class="interest" id="interest" style="height: 100vh; position: relative;"></section>
+            <section class="link4" id="link4" style="height: 100vh;"></section>
+            <section class="link5" id="link5" style="height: 100vh;"></section>
           </div>
         </div>
       </div>
@@ -77,36 +79,37 @@
 <script type='text/javascript' src='js/demo.js'></script>
 <script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
 <script>
-$("#mySidenav a").on("click",function(){
-  $(this)
-  .addClass("active")
-  .siblings()
-  .removeClass("active")
+$(".w3-sidenav a").smoothScroll({
+  offset: 0,
+  speed: 1000,
+
+  afterScroll: function(){
+
+    $(this)
+    .addClass("active")
+    .siblings()
+    .removeClass();
+  }
+
 });
-$("#mySidenav a").smoothScroll({
-    speed: 1000,
-    afterScroll: function(){
-       $(this)
-       .addClass("active")
-       .siblings()
-       .removeClass("active");
-    }
- });
-$(window).on("scroll",function(){
 
-    $("section").each(function(){
-      var scrT = $(document).scrollTop();
-      var offT = $(this).offset().top;
 
+$(window).scroll(function(){
+
+  $("section").each(function(){
+    var scrollTop = $(document).scrollTop();
+    var offsetTop = $(this).offset().top;
+    var distance = offsetTop-scrollTop;
+    if(distance <= 0){
       var id = $(this).attr("id");
-
-      $("a[href='#"+id+"']")
+      $("a[href = '#"+id+"']")
       .addClass("active")
       .siblings()
       .removeClass("active");
-    });
+    }
+  });
 
- });
+});
 
 </script>
 </body>
