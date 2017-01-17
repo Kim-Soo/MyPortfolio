@@ -51,7 +51,8 @@ html, body,
   font-family: NSEB;
   top: 40%;
   width:280px;
-  height:150px;
+  height:200px;
+  font-size: 25px;
   display:inline-block;
 }
 nav a.active{
