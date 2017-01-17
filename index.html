@@ -43,7 +43,7 @@
       <div class="bodypage">
         <div class="bodyinner">
           <div class="article">
-            <div class="home" style="height: 100vh;">
+            <section class="home" style="height: 100vh;">
               <div class="homecon ui piled segment" style="position: absolute; z-index:99; width: 100%; margin: 0 auto !important;">
                 <div class="myimg col-lg-6 col-md-12 col-xs-12" style="padding-top: 15px;">
                   <img class="ui medium circular image" src="image/myimage.jpeg">
@@ -61,8 +61,8 @@
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="intro" id="intro" style="height: 100vh;"></div>
+            </section>
+            <section class="intro" id="intro" style="height: 100vh;"></section>
             <!--<div class="interest" id="interest" style="height: 100vh; position: relative;"></div>-->
           </div>
         </div>
@@ -75,18 +75,39 @@
 <script src="js/bootstrap.js"></script>
 <script type='text/javascript' src='js/jquery.particleground.js'></script>
 <script type='text/javascript' src='js/demo.js'></script>
+<script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
 <script>
-  function w3_open() {
-    document.getElementById("mySidenav").style.display = "block";
-  }
-  $(document).ready(function(){
-  		$('.w3-sidenav a').click(function(){
-        $(this).animate({
-        }, 10000, 'easeOutElastic');
-    		$('a').removeClass('active');
-    		$(this).addClass('active');
-		});
-	});
+$("#mySidenav a").on("click",function(){
+  $(this)
+  .addClass("active")
+  .siblings()
+  .removeClass("active")
+});
+$("#mySidenav a").smoothScroll({
+    speed: 1000,
+    afterScroll: function(){
+       $(this)
+       .addClass("active")
+       .siblings()
+       .removeClass("active");
+    }
+ });
+$(window).on("scroll",function(){
+
+    $("section").each(function(){
+      var scrT = $(document).scrollTop();
+      var offT = $(this).offset().top;
+
+      var id = $(this).attr("id");
+
+      $("a[href='#"+id+"']")
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+    });
+
+ });
+
 </script>
 </body>
 </html>

@@ -116,6 +116,7 @@ nav a.active{
   height: 300vh;
   background-color: #FAFAFA;
   text-align: center;
+  border-radius: 0.5%;
 }
 .article{
   box-sizing: inherit;
