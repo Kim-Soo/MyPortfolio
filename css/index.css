@@ -118,18 +118,23 @@ nav a.active{
   text-align: center;
 }
 .article{
-  display: block;
   box-sizing: inherit;
   text-align: center;
   height: 300vh;
   position: relative;
-  background: transparents;
-}
-.home, .intro{
-  position: static !important;
 }
 .homecon{
   top: 2%;
+}
+.myimg img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.myintro li{
+  font-family: NSR;
+  margin-top: 5%;
+  font-size: 18px;
 }
 @media screen and (max-width: 960px){
   .left-side{
@@ -147,6 +152,14 @@ nav a.active{
   }
   #fontimg{
     display: block;
+  }
+  .myimg img{
+    width: 70%;
+  }
+  .myintro li{
+    font-family: NSR;
+    margin-top: 3%;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 768px){
