@@ -4,181 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/font.css">
   <title>Document</title>
 </head>
-<style>
-  * {
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
-     font-family: sans-serif;
-  }
-  html, body,
-  .container{
-     height: 100vh;
-     width: 100vw;
-     background-color: #EAEAEA;
-  }
-  .box{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 0;
-  }
-  .left-side{
-    position: fixed;
-    z-index: 50;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100vw;
-    overflow: hidden;
-    border: solid red;
-  }
-  .left-inner{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding: 20px 20px 75px 75px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  #mySidenav{
-    top: 40%;
-    width:280px;
-    height:200px;
-    display:inline-block;
-    background-color: #EAEAEA;
-    opacity:0.8;
-  }
-  .right-side{
-    z-index: 55;
-    position: absolute;
-    min-height: 100vh;
-    right: 0;
-    top: 0;
-    left: 360px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    border: solid blue;
-    background: transparents;
-  }
-  .mainpage{
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(100vw - 360px);
-    min-height: 100vh;
-    padding-right: 40px;
-  }
-  .toppage{
-    background: transparent;
-  }
-  .tpinner{
-    text-align: center;
-    border: dotted;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-  }
-  .tpbody{
-    text-align: center;
-    height: 40vh;
-    border: dotted;
-  }
-  #fontimg{
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bodypage{
-    margin-top: 100px;
-    height: auto;
-  }
-  .bodyinner{
-    padding: 0 60px;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 300vh;
-    background: #FFF;
-    text-align: center;
-    border: dotted green;
-  }
-  .article{
-    display: block;
-    box-sizing: inherit;
-    text-align: center;
-    border: dotted yellow;
-    height: 300vh;
-  }
-  @media screen and (max-width: 960px){
-    .left-side{
-      display: none;
-    }
-    .right-side{
-      left: 0;
-    }
-    .mainpage{
-      width: 100vw;
-      padding-right: 0;
-    }
-  }
-  @media screen and (max-width: 768px){
-    .tpbody{
-      height: 30vh;
-    }
-    #fontimg{
-      display: block;
-    }
-    .bodypage{
-      margin-top: 30px;
-    }
-    .bodyinner{
-      padding: 0 20px;
-      margin-left: 10%;
-      margin-right: 10%;
-      height: 300vh;
-      background: #FFF;
-      text-align: center;
-      border: dotted green;
-    }
-  }
-</style>
 <body>
 <div class="container">
-
   <div class="box">
   <canvas id="canvas" style="width: 100%; height: 100%; touch-action: none; cursor: inherit;"></canvas>
   </div>
-  <div class="left-side">
-    <img src="image/font.png" style="height: 100%;">
+  <div class="left-side" id="particles">
     <div class="left-inner">
       <nav class="w3-sidenav w3-collapse" id="mySidenav">
-        <a class="active" href="#">Home</a>
-        <a href="#intro">Intro</a>
-        <a href="#interest">Interest</a>
+        <a class="navhome active" href="#">Home</a>
+        <a class="navintro" href="#intro">Intro</a>
+        <a class="navinter" href="#interest">Interest</a>
         <a href="#">Link 4</a>
         <a href="#">Link 5</a>
       </nav>
+    </div>
+    <div class="logo" style="position: absolute; left: 100px; top: 90%; width: 20%; font-family: NSEB;">
+      <p>Su's portfolio site</p>
     </div>
   </div>
   <div class="right-side">
@@ -193,17 +43,20 @@
       <div class="bodypage">
         <div class="bodyinner">
           <div class="article">
-            <div class="home col-lg-12 col-md-12 col-xs-12" id="home" style="height: 100vh; position: relative;">
-              <div class="myimg col-lg-5 col-md-12 col-xs-12" style="padding-top: 15px;">
-                <img class="ui medium circular image" src="image/myimage.jpeg" style="width: 100%;">
-              </div>
-              <div class="intro col-lg-7 col-md-12 col-xs-12" style="text-align: left; top:5%;">
-                <p>안녕하세요. 저는 HCI 연구를 통해 UX와 UI를 기반으로 한 IoT 기술의 스마트폰 앱 개발과 기술 개발을 공부하고있는 학생입니다.
-                현재 대학교 졸업을 앞두고 대학원 진학을 목표로 공부하고 있습니다.</p>
+            <div class="home" style="height: 100vh;">
+              <div class="homecon ui piled segment" style="position: absolute; z-index:99; width: 100%; margin: 0 auto !important;">
+                <div class="myimg col-lg-5 col-md-12 col-xs-12" style="padding-top: 15px;">
+                  <img class="ui medium circular image" src="image/myimage.jpeg" style="width: 100%;">
+                </div>
+                <h4 class="ui header" style="text-align: left;">인트로</h4>
+                <div class="intro" style="text-align: left; top:5%; font-family: NSR;">
+                  <p>안녕하세요. 저는 HCI 연구를 통해 UX와 UI를 기반으로 한 IoT 기술의 스마트폰 앱 개발과 기술 개발을 공부하고있는 학생입니다.
+                  현재 대학교 졸업을 앞두고 대학원 진학을 목표로 공부하고 있습니다. 나눔스퀘어</p>
+                </div>
               </div>
             </div>
-            <!--<div class="intro" id="intro" style="height: 100vh; position: relative;"></div>
-            <div class="interest" id="interest" style="height: 100vh; position: relative;"></div>-->
+            <div class="intro" id="intro" style="height: 100vh;"></div>
+            <!--<div class="interest" id="interest" style="height: 100vh; position: relative;"></div>-->
           </div>
         </div>
       </div>
@@ -213,10 +66,20 @@
 <script src="js/jquery-3.1.1.js"></script>
 <script src="semantic/dist/semantic.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script type='text/javascript' src='js/jquery.particleground.js'></script>
+<script type='text/javascript' src='js/demo.js'></script>
 <script>
   function w3_open() {
     document.getElementById("mySidenav").style.display = "block";
   }
+  $(document).ready(function(){
+  		$('.w3-sidenav a').click(function(){
+        $(this).animate({
+        }, 10000, 'easeOutElastic');
+    		$('a').removeClass('active');
+    		$(this).addClass('active');
+		});
+	});
 </script>
 </body>
 </html>
