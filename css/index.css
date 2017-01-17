@@ -113,7 +113,7 @@ nav a.active{
   padding: 0 60px;
   margin-left: 10%;
   margin-right: 10%;
-  height: 300vh;
+  height: 500vh;
   background-color: #FAFAFA;
   text-align: center;
   border-radius: 0.5%;
@@ -121,7 +121,7 @@ nav a.active{
 .article{
   box-sizing: inherit;
   text-align: center;
-  height: 300vh;
+  height: 500vh;
   position: relative;
 }
 .homecon{
