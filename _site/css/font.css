@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: goBoldItalic;
+    src: url('../font/GoboldBoldItalic.ttf');
+}
+@font-face {
+    font-family: goBoldLight;
+    src: url('../font/GoboldLight.ttf');
+}
+@font-face {
+  font-family: NSB;
+  src: url('../font/NanumSquareBold.ttf')
+}
+@font-face {
+  font-family: NSEB;
+  src: url('../font/NanumSquareExtraBold.ttf')
+}
+@font-face {
+  font-family: NSL;
+  src: url('../font/NanumSquareLight.ttf')
+}
+@@font-face {
+  font-family: NSR;
+  src: url('../font/NanumSquareRegular.ttf');
+}

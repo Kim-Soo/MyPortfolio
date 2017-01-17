@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/font.css">
+  <title>Portfolio</title>
+</head>
+<body>
+<div class="container">
+  <div class="box">
+  <canvas id="canvas" style="width: 100%; height: 100%; touch-action: none; cursor: inherit;"></canvas>
+  </div>
+  <div class="left-side" id="particles">
+    <div class="left-inner">
+      <nav class="w3-sidenav w3-collapse" id="mySidenav">
+        <a class="navhome active" href="#">Home</a>
+        <a class="navintro" href="#intro">Intro</a>
+        <a class="navinter" href="#interest">Interest</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+      </nav>
+    </div>
+    <div class="logo" style="position: absolute; left: 100px; top: 90%; width: 20%; font-family: NSEB;">
+      <p>Su's portfolio site</p>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="mainpage">
+      <div class="toppage">
+        <div class="tpinner">
+          <div class="tpbody">
+            <img src="image/font.png" id=fontimg height="100%;">
+          </div>
+        </div>
+      </div>
+      <div class="bodypage">
+        <div class="bodyinner">
+          <div class="article">
+            <div class="home" style="height: 100vh;">
+              <div class="homecon ui piled segment" style="position: absolute; z-index:99; width: 100%; margin: 0 auto !important;">
+                <div class="myimg col-lg-6 col-md-12 col-xs-12" style="padding-top: 15px;">
+                  <img class="ui medium circular image" src="image/myimage.jpeg">
+                </div>
+                <h3 class="ui header" style="text-align: left;">인트로</h3>
+                <div class="myintro col-lg-6 col-md-12 col-xs-12" style="text-align: left; top:10%; font-family: NSR;">
+                  <ul>
+                    <li>이름 : 김수</li>
+                    <li>생년월일 : 1993.07.21</li>
+                    <li>학력 : 동국대학교 경주캠퍼스 정보경영학과 졸업예정</li>
+                    <li>거주지 : 서울특별시 강남구 자곡로</li>
+                    <li>메일 : 68032k@gmail.com</li>
+                    <li>전화번호 : +82 010-9371-4489</li>
+                    <li><a href="Git : https://github.com/Kim-Soo">Git : https://github.com/Kim-Soo</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="intro" id="intro" style="height: 100vh;"></div>
+            <!--<div class="interest" id="interest" style="height: 100vh; position: relative;"></div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type='text/javascript' src='js/jquery.particleground.js'></script>
+<script type='text/javascript' src='js/demo.js'></script>
+<script>
+  function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+  }
+  $(document).ready(function(){
+  		$('.w3-sidenav a').click(function(){
+        $(this).animate({
+        }, 10000, 'easeOutElastic');
+    		$('a').removeClass('active');
+    		$(this).addClass('active');
+		});
+	});
+</script>
+</body>
+</html>
