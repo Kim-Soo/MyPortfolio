@@ -104,13 +104,16 @@ nav a.active{
 .bodypage{
   margin-top: 100px;
   height: auto;
+  width: auto;
+  margin-bottom: 100px;
+  border-radius: 0.4%;
 }
 .bodyinner{
   padding: 0 60px;
   margin-left: 10%;
   margin-right: 10%;
   height: 300vh;
-  background: #FFF;
+  background-color: #FAFAFA;
   text-align: center;
 }
 .article{
@@ -119,6 +122,7 @@ nav a.active{
   text-align: center;
   height: 300vh;
   position: relative;
+  background: transparents;
 }
 .home, .intro{
   position: static !important;
