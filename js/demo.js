@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     dotColor: '#fff',
     lineColor: '#fff'
   });
-  var intro = document.getElementById('intro');
+  var intro = document.getElementById('canvas');
   intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
 }, false);
 

@@ -124,7 +124,7 @@ nav a.active{
   height: 500vh;
   position: relative;
 }
-.homecon{
+.myIntro{
   top: 2%;
 }
 .myimg img{
@@ -132,10 +132,10 @@ nav a.active{
   margin-left: auto;
   margin-right: auto;
 }
-.myintro li{
+.myInfo li{
   font-family: NSR;
   margin-top: 5%;
-  font-size: 18px;
+  font-size: 15px;
 }
 @media screen and (max-width: 960px){
   .left-side{
@@ -157,7 +157,7 @@ nav a.active{
   .myimg img{
     width: 70%;
   }
-  .myintro li{
+  .myInfo li{
     font-family: NSR;
     margin-top: 3%;
     font-size: 15px;
@@ -181,7 +181,7 @@ nav a.active{
     background: #FFF;
     text-align: center;
   }
-  .homecon{
+  .myIntro{
     top: 1%;
   }
 }
