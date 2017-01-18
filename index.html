@@ -46,11 +46,12 @@
           <div class="article">
             <section class="home" id="home" style="height: 100vh;">
               <div class="indexPage">
-                <p>안녕하세요. 본 홈페이지는 개인 포트폴리오 사이트의 목적으로 제작된 개인 블로그 형식의 홈페이지 입니다.
-                프로그래밍 개발에 입문하게 된지 얼마 되지 않아 홈페이지를 제작한 과정에 대한 글을 게시하는 것을 시작으로
-                앞으로 제가 연구하는 것들과 프로젝트들을 게시할 예정이며, 주로 다루어질 내용은 사물인터넷을 이용한 앱 개발,
-                HCI 와 UX, 웹 프로그래밍, AI와 머신러닝에 대한 정보들을 게시할 예정입니다. 
-                </p>
+                <p>Hi, my name is SU. I'm expect to graduate from Dongguk University in Gyeong-Ju and my undergraduating major was
+                  Information Management. I started programming at last September after I completed University courses. During the university
+                  course I usually learned about Management system like CRM, SCM and ERP.
+                  I also learned about computer technologies and how to make inovative technologies. I was interested about new technologies and I
+                  want to create great
+                   </p>
               </div>
             </section>
             <section class="myIntro" id="myIntro" style="height: 100vh;">
@@ -88,6 +89,9 @@
 <script type='text/javascript' src='js/demo.js'></script>
 <script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
 <script>
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 $(".w3-sidenav a").smoothScroll({
   offset: 0,
   speed: 1000,
