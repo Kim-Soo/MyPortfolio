@@ -9,23 +9,25 @@
 }
 @font-face {
   font-family: NSB;
-  src: url('../font/NanumSquareBold.ttf')
+  src: url('../font/NanumSquareBold.eot'); /* IE9 Compat Modes */
+  src: url('../font/NanumSquareBold.woff') format('woff'), /* Modern Browsers */
+       url('../font/NanumSquareBold.ttf') format('truetype');
 }
 @font-face {
   font-family: NSEB;
-  src: url('../font/NanumSquareExtraBold.ttf')
+  src: url('../font/NanumSquareExtraBold.eot'); /* IE9 Compat Modes */
+  src: url('../font/NanumSquareExtraBold.woff') format('woff'), /* Modern Browsers */
+       url('../font/NanumSquareExtraBold.ttf') format('truetype');
 }
 @font-face {
   font-family: NSL;
-  src: url('../font/NanumSquareLight.ttf')
+  src: url('../font/NanumSquareRegular.eot'); /* IE9 Compat Modes */
+  src: url('../font/NanumSquareLight.woff') format('woff'), /* Modern Browsers */
+       url('../font/NanumSquareLight.ttf') format('truetype');
 }
-@@font-face {
-  font-family: NSR;
-  src: url('../font/NanumSquareRegular.ttf')
+@font-face {
+  font-family: 'NSR';
+  src: url('../font/NanumSquareRegular.eot'); /* IE9 Compat Modes */
+  src: url('../font/NanumSquareRegular.woff') format('woff'),/* Modern Browsers */
+       url('../font/NanumSquareRegular.ttf') format('truetype');/* Safari, Android, iOS */
 }
-@font-face{
-font-family:ng;
-src:url(NanumGothic.eot);
-src:local(※), url(NanumGothic.woff) format(‘woff’)
-}
-body{font-family:나눔고딕, NanumGothic, ng}
