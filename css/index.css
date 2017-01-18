@@ -131,7 +131,7 @@ nav a.active{
   top: 5%;
   text-align: left;
   font-family: NSB;
-  font-size: 20px;
+  font-size: 1vw;
 }
 .myIntro{
   top: 2%;
@@ -142,7 +142,7 @@ nav a.active{
   margin-right: auto;
 }
 .myInfo li{
-  margin-top: 5%;
+  margin-top: 3%;
   font-size: 15px;
 }
 @media screen and (max-width: 960px){
@@ -166,7 +166,6 @@ nav a.active{
     width: 70%;
   }
   .myInfo li{
-    font-family: NSR;
     margin-top: 3%;
     font-size: 15px;
   }
