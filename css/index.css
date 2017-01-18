@@ -131,7 +131,7 @@ nav a.active{
   top: 5%;
   text-align: left;
   font-family: NSB;
-  font-size: 1vw;
+  font-size: 18px;
 }
 .myIntro{
   top: 2%;
@@ -162,6 +162,10 @@ nav a.active{
   #fontimg{
     display: block;
   }
+  .indexPage{
+    top: 3%;
+    font-size: 15px;
+  }
   .myimg img{
     width: 70%;
   }
@@ -188,7 +192,30 @@ nav a.active{
     background: #FFF;
     text-align: center;
   }
+  .indexPage{
+    top: 1.5%;
+    font-size: 13.5px;
+  }
   .myIntro{
     top: 1%;
+  }
+  .myInt h3{
+    font-size: 17px !important;
+
+  }
+  .myInfo li{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px){
+  .indexPage{
+    top: 1.5%;
+    font-size: 12px;
+  }
+  .myInt h3{
+    font-size: 15px !important;
+  }
+  .myInfo li{
+    font-size: 12px;
   }
 }
