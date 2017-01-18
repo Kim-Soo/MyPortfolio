@@ -126,12 +126,24 @@ nav a.active{
 }
 .indexPage{
   width: 100%;
-  height: 30%;
-  position: relative;
-  top: 5%;
+  position: static !important;
+  margin-top: 13%;
   text-align: left;
   font-family: NSB;
   font-size: 18px;
+}
+.myMotto{
+  width: 100%;
+  font-size: 18px;
+  color: #707070;
+  position: static !important;
+  margin-top: 7%;
+}
+.markTwain img{
+  width: 70%;
+}
+.mottoLetter{
+  margin-top: 5%;
 }
 .myIntro{
   top: 2%;
