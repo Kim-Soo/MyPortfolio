@@ -21,5 +21,11 @@
 }
 @@font-face {
   font-family: NSR;
-  src: url('../font/NanumSquareRegular.ttf');
+  src: url('../font/NanumSquareRegular.ttf')
 }
+@font-face{
+font-family:ng;
+src:url(NanumGothic.eot);
+src:local(※), url(NanumGothic.woff) format(‘woff’)
+}
+body{font-family:나눔고딕, NanumGothic, ng}
