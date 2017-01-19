@@ -113,7 +113,7 @@ nav a.active{
   padding: 0 60px;
   margin-left: 10%;
   margin-right: 10%;
-  height: 500vh;
+  height: 100%;
   background-color: #FAFAFA;
   text-align: center;
   border-radius: 25px;
@@ -121,7 +121,7 @@ nav a.active{
 .article{
   box-sizing: inherit;
   text-align: center;
-  height: 500vh;
+  height: 100%;
   position: relative;
 }
 .indexPage{
@@ -146,6 +146,13 @@ nav a.active{
 .mottoLetter{
   margin-top: 5%;
 }
+.myInt{
+  margin-top: 5%;
+  position: static;
+  width: 90%;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
 .myIntro{
   top: 2%;
 }
@@ -157,6 +164,7 @@ nav a.active{
 .myInfo li{
   margin-top: 3%;
   font-size: 15px;
+  text-align: left;
 }
 @media screen and (max-width: 960px){
   .left-side{
@@ -201,7 +209,7 @@ nav a.active{
     padding: 0 20px;
     margin-left: 10%;
     margin-right: 10%;
-    height: 300vh;
+    height: 500vh;
     background: #FFF;
     text-align: center;
   }

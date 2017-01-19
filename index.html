@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/simplemenu.css">
   <title>Portfolio</title>
 </head>
 <body>
@@ -31,6 +32,23 @@
     </div>
   </div>
   <div class="right-side">
+    <div class="mobilenav">
+      <li><a href="#toppage">Home</a></li>
+      <li><a href="#myIntro">Services</a></li>
+      <li><a href="#myInterest">Contact</a></li>
+      <li><a href="#link4">About</a></li>
+      <li><a href="#link5">Blog</a></li>
+    </div>
+
+    <!-- THIS IS THE ICON -->
+
+    <a href="javascript:void(0)" class="mbnicon">
+       <div class="hamburger">
+         <div class="menui top-menu"></div>
+         <div class="menui mid-menu"></div>
+         <div class="menui bottom-menu"></div>
+       </div>
+    </a>
     <div class="mainpage">
       <section id="toppage"></section>
       <div class="toppage">
@@ -68,17 +86,17 @@
               </div>
             </section>
             <section class="myIntro" id="myIntro" style="height: 100vh;">
-              <div class="myInt" style="position: static; z-index:99; width: 90%; margin-left: 5%; margin-right: 5%;">
+              <div class="myInt col-lg-10">
+                <h3 style="text-align: left; font-family: NSEB;">Introduction</h3>
                 <div class="myimg col-lg-6" style="padding-top: 15px;">
                   <img class="ui medium circular image" src="image/myimage.jpeg">
                 </div>
-                <h3 class="ui header" style="text-align: left; font-family: NSEB;">Introduction</h3>
-                <div class="myInfo col-lg-6" style="text-align: left; top:10%; font-family: NSR;">
+                <div class="myInfo col-lg-6" style="margin-top:2%; font-family: NSR;">
                   <ul>
                     <li>Name : KIM-SU</li>
                     <li>Birth : 1993.07.21</li>
-                    <li>Education : Expect to graduate from Dongguk University in Gyeong-Ju, Spring 2017</li>
-                    <li>Address : 180, Jagok-ro, Gangnam-gu, Seoul, Republic of Korea</li>
+                    <li>Education : Expect to graduate from Dongguk University in Gyeong-Ju, Spring 2017 (Information Management degree)</li>
+                    <li>Address : Jagok-ro, Gangnam-gu, Seoul, Republic of Korea</li>
                     <li>E-mail : 68032k@gmail.com</li>
                     <li>Phone : +82 010-9371-4489</li>
                     <li><a href="Git : https://github.com/Kim-Soo">Git : github.com/Kim-Soo</a></li>
@@ -101,6 +119,7 @@
 <script type='text/javascript' src='js/jquery.particleground.js'></script>
 <script type='text/javascript' src='js/demo.js'></script>
 <script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
+</script>
 <script>
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
@@ -126,7 +145,7 @@ $(window).scroll(function(){
     var scrollTop = $(document).scrollTop();
     var offsetTop = $(this).offset().top;
     var distance = offsetTop-scrollTop;
-    if(distance <= 0){
+    if(distance <= 50){
       var id = $(this).attr("id");
       $("a[href = '#"+id+"']")
       .addClass("active")
@@ -136,6 +155,15 @@ $(window).scroll(function(){
   });
 
 });
+$(document).ready(function () {
+    $(".mbnicon").click(function () {
+        $(".mobilenav").fadeToggle(500);
+        $(".top-menu").toggleClass("top-animate");
+        $(".mid-menu").toggleClass("mid-animate");
+        $(".bottom-menu").toggleClass("bottom-animate");
+    });
+});
+
 
 </script>
 </body>
