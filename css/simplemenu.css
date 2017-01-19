@@ -65,6 +65,7 @@
 .mobilenav {
   /*    top: 47px !important;*/
   font-family: NSB;
+  visibility: hidden;
   top: 0;
   left: 0;
   z-index: 999;
@@ -93,5 +94,8 @@
 
 @media screen and (max-width: 960px){
   .mbnicon {
+    visibility: visible;
+  }
+  .mobilenav{
     visibility: visible;
   }
