@@ -171,6 +171,7 @@ nav a.active{
     display: none;
   }
   .right-side{
+    margin-top: 10%;
     left: 0;
   }
   .mainpage{
