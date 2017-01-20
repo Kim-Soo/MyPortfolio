@@ -264,6 +264,18 @@ nav a.active{
   .myInt h2{
     font-size: 25px;
   }
+  .interest h2{
+    font-size: 25px;
+  }
+  .interest h3{
+    font-size: 20px;
+  }
+  .skills h2{
+    font-size: 25px;
+  }
+  .contacts h2{
+    font-size: 25px;
+  }
   .myInfo{
     margin-top: 5%;
   }
@@ -279,6 +291,18 @@ nav a.active{
     font-size: 20px;
   }
   .myInt h2{
+    font-size: 20px;
+  }
+  .interest h2{
+    font-size: 20px;
+  }
+  .interest h3{
+    font-size: 18px;
+  }
+  .skills h2{
+    font-size: 20px;
+  }
+  .contacts h2{
     font-size: 20px;
   }
   .indexPage{

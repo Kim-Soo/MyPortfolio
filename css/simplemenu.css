@@ -98,3 +98,9 @@
   .mobilenav{
     visibility: visible;
   }
+}
+@media screen and (max-width: 768px){
+  .menui{
+    background: #002CB7;
+  }
+}
