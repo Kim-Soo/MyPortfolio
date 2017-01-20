@@ -51,12 +51,12 @@ html, body,
   font-family: NSEB;
   top: 40%;
   width:280px;
-  height:230px;
+  height:260px;
   font-size: 20px;
   display:inline-block;
 }
 nav a.active{
-  color: #e76b60;
+  color:#002CB7;
 }
 .right-side{
   z-index: 55;
@@ -106,7 +106,7 @@ nav a.active{
   margin-top: 100px;
   height: auto;
   width: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .bodyinner{
   padding: 0 60px;
