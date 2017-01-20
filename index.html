@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="css/simplemenu.css">
+  <link rel="stylesheet" href="css/jquery.fatNav.css">
   <link rel="stylesheet" href="css/img.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
@@ -38,14 +38,17 @@
     </div>
   </div>
   <div class="right-side">
-    <div class="mobilenav">
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#myIntro">INTRO</a></li>
-      <li><a href="#myInterest">INTERESTS</a></li>
-      <li><a href="#mySkills">SKILLS</a></li>
-      <li><a href="#contactMe">CONTACT</a></li>
+    <div class="fat-nav">
+      <div class="fat-nav__wrapper">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#myIntro">INTRO</a></li>
+        <li><a href="#myInterest">INTERESTS</a></li>
+        <li><a href="#mySkills">SKILLS</a></li>
+        <li><a href="#contactMe">CONTACT</a></li>
+      </div>
     </div>
+
 
     <!-- THIS IS THE ICON -->
 
@@ -96,7 +99,7 @@
             </section>
             <section class="myIntro" id="myIntro" style="overflow: hidden; margin-top: 5%;">
               <div class="myInt col-lg-12 col-md-12 col-xs-12">
-                <h2 class="col-lg-12" style="text-align: center; font-family: NSEB; color: #e76b60; position: static; margin-top: 15%;">INTRODUCTION</h2></br>
+                <h2 class="col-lg-12" style="text-align: center; font-family: NSEB; color: #e76b60; position: static; margin-top: 15%;">INTRO</h2></br>
                 <div class="myimg col-lg-12">
                   <img class="ui large rounded image" src="image/myimage.jpeg">
                 </div>
@@ -219,11 +222,17 @@
 <script type='text/javascript' src='js/jquery.particleground.js'></script>
 <script type='text/javascript' src='js/demo.js'></script>
 <script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
+<script src="js/jquery.fatNav.js"></script>
 </script>
 <script>
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
+(function() {
+
+    $.fatNav();
+
+}());
 $(".w3-sidenav a").smoothScroll({
   offset: 0,
   speed: 1000,
@@ -263,7 +272,13 @@ $(document).ready(function () {
         $(".bottom-menu").toggleClass("bottom-animate");
     });
     $(".mobilenav li").click(function(){
-      $(".mobilenav").fadeToggle('hide');
+      $(".mobilenav").fadeToggle("hide");
+      $(".mbnicon").ready(function(){
+        $("top-animate").toggleClass(".top-menu");
+        $("mid-animate").toggleClass(".mid-menu");
+        $("bottom-animate").toggleClass(".bottom-menu");
+      });
+
     });
 });
 
