@@ -4,11 +4,13 @@
 .iot,
 .web,
 .ux,
+.python,
 .html5,
 .css3,
 .java,
 .reactnative,
-.sql {
+.sql,
+.RW {
   position: relative;
 }
 
@@ -18,11 +20,13 @@
 .iotimage,
 .webimage,
 .uximage,
+.pythonimage,
 .html5image,
 .css3image,
 .javaimage,
 .RNimage,
-.sqlimage {
+.sqlimage,
+.RWimage {
   display: block;
   width: 100%;
   height: auto;
@@ -59,6 +63,9 @@
 .ux:hover .overlay{
   width: 90%;
 }
+.python:hover .overlay{
+  width: 90%;
+}
 .html5:hover .overlay{
   width: 90%;
 }
@@ -74,6 +81,10 @@
 .sql:hover .overlay{
   width: 90%;
 }
+.RW:hover .overlay{
+  width: 90%;
+}
+
 .text {
   white-space: nowrap;
   color: white;
