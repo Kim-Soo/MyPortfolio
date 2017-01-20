@@ -51,7 +51,7 @@ html, body,
   font-family: NSEB;
   top: 40%;
   width:280px;
-  height:200px;
+  height:230px;
   font-size: 20px;
   display:inline-block;
 }
@@ -129,9 +129,12 @@ nav a.active{
   display: block;
   position: static !important;
   margin-top: 10%;
-  text-align: left;
+  text-align: center;
   font-family: NSB;
   font-size: 18px;
+}
+.indexPage p{
+  margin-top: 5%;
 }
 .myMotto{
   display: block;
@@ -149,25 +152,43 @@ nav a.active{
   display: block;
   margin-top: 5%;
 }
+.mottoLetter p{
+  font-size: 20px;
+}
 .myInt{
-  margin-top: 5%;
   position: static;
   width: 90%;
   overflow: hidden;
   float: none !important;
 }
-.myIntro{
-  margin-top: 10%;
-}
 .myimg img{
-  width: 100%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: static;
+  margin-top: 5%;
+}
+.myInfo{
+  position: static;
+  padding-top: 5%;
+  overflow: hidden;
+  float: none !important;
+}
+.myInfo p{
+  text-align: center;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
-.myInfo li{
-  margin-top: 3%;
-  font-size: 15px;
-  text-align: left;
+@media screen and (max-width: 1200px){
+  .markTwain img{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .myInfo p{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 960px){
   .left-side{
@@ -187,6 +208,10 @@ nav a.active{
   #fontimg{
     display: block;
   }
+  .markTwain img{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
   .indexPage{
     top: 3%;
     font-size: 15px;
@@ -194,8 +219,10 @@ nav a.active{
   .myimg img{
     width: 70%;
   }
+  .myInfo{
+    margin-top: 5%;
+  }
   .myInfo li{
-    margin-top: 3%;
     font-size: 15px;
   }
 }
@@ -221,12 +248,14 @@ nav a.active{
     top: 1.5%;
     font-size: 13.5px;
   }
-  .myIntro{
-    margin-top: 1%;
+  .indexPage h2{
+    font-size: 25px;
   }
-  .myInt h3{
-    font-size: 17px !important;
-
+  .myInt h2{
+    font-size: 25px;
+  }
+  .myInfo{
+    margin-top: 5%;
   }
   .myInfo li{
     font-size: 13px;
@@ -239,7 +268,7 @@ nav a.active{
   .indexPage h2{
     font-size: 20px;
   }
-  .myIntro h2{
+  .myInt h2{
     font-size: 20px;
   }
   .indexPage{
