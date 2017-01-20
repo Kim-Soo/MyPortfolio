@@ -1,0 +1,62 @@
+.ai,
+.app,
+.hci,
+.iot,
+.python,
+.ux {
+  position: relative;
+}
+
+.aiimage,
+.appimage,
+.hciimage,
+.iotimage,
+.pythonimage,
+.uximage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 0;
+  background-color: #000;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.ai:hover .overlay {
+  width: 90%;
+}
+.app:hover .overlay {
+  width: 90%;
+}
+.hci:hover .overlay {
+  width: 90%;
+}
+.iot:hover .overlay {
+  width: 90%;
+}
+.python:hover .overlay{
+  width: 90%;
+}
+.ux:hover .overlay{
+  width: 90%;
+}
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
