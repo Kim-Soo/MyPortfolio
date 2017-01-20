@@ -56,7 +56,11 @@ html, body,
   display:inline-block;
 }
 nav a.active{
+<<<<<<< HEAD
   color: #002CB7;
+=======
+  color:#002CB7;
+>>>>>>> 6da1cd79b38c5d462721882925e9c49584e69aec
 }
 .right-side{
   z-index: 55;
@@ -106,7 +110,7 @@ nav a.active{
   margin-top: 100px;
   height: auto;
   width: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .bodyinner{
   padding: 0 60px;
