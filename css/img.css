@@ -2,8 +2,13 @@
 .app,
 .hci,
 .iot,
-.python,
-.ux {
+.web,
+.ux,
+.html5,
+.css3,
+.java,
+.reactnative,
+.sql {
   position: relative;
 }
 
@@ -11,8 +16,13 @@
 .appimage,
 .hciimage,
 .iotimage,
-.pythonimage,
-.uximage {
+.webimage,
+.uximage,
+.html5image,
+.css3image,
+.javaimage,
+.RNimage,
+.sqlimage {
   display: block;
   width: 100%;
   height: auto;
@@ -43,10 +53,25 @@
 .iot:hover .overlay {
   width: 90%;
 }
-.python:hover .overlay{
+.web:hover .overlay{
   width: 90%;
 }
 .ux:hover .overlay{
+  width: 90%;
+}
+.html5:hover .overlay{
+  width: 90%;
+}
+.css3:hover .overlay{
+  width: 90%;
+}
+.java:hover .overlay{
+  width: 90%;
+}
+.reactnative:hover .overlay{
+  width: 90%;
+}
+.sql:hover .overlay{
   width: 90%;
 }
 .text {
