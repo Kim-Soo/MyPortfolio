@@ -110,8 +110,8 @@ nav a.active{
 }
 .bodyinner{
   padding: 0 60px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   min-height: 100% !important;
   background-color: #FAFAFA;
   text-align: center;
