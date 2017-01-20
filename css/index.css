@@ -174,9 +174,13 @@ nav a.active{
   overflow: hidden;
   float: none !important;
 }
+.myInfo h3{
+  font-family: NSB;
+}
 .myInfo p{
   text-align: center;
   width: 50%;
+  font-size: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -202,7 +206,6 @@ nav a.active{
     display: none;
   }
   .right-side{
-    margin-top: 10%;
     left: 0;
   }
   .mainpage{
@@ -282,6 +285,9 @@ nav a.active{
   .myInfo li{
     font-size: 13px;
   }
+  .myInfo h3{
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 480px){
   .mottoLetter p{
@@ -317,6 +323,9 @@ nav a.active{
   }
   .myInfo{
     margin-top: 10%;
+  }
+  .myInfo h3{
+    font-size: 15px;
   }
   .myInfo li{
     font-size: 12px;
