@@ -288,6 +288,9 @@ nav a.active{
   .myInfo h3{
     font-size: 20px;
   }
+  .workBoard h2{
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 480px){
   .mottoLetter p{
@@ -329,5 +332,8 @@ nav a.active{
   }
   .myInfo li{
     font-size: 12px;
+  }
+  .workBoard h2{
+    font-size: 20px;
   }
 }
