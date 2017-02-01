@@ -138,3 +138,6 @@
     background: #002CB7;
   }
 }
+@media screen and (max-width: 480px){
+  .fat-nav li:first-child { margin-top: 0; }
+}
