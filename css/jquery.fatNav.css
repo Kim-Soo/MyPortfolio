@@ -139,6 +139,7 @@
   }
 }
 @media screen and (max-width: 480px){
+  .fat-nav li:first-child { margin-top: 35%; }
   .fat-nav li a{
     font-size: 25px;
   }
